@@ -1,6 +1,22 @@
 # Introduction
 
-\<TBD>
+This project provides a set of C#-based Code Templates for [CodeRush](https://www.devexpress.com/products/coderush/) targeted explicitly at writing unit tests with [NFluent](https://github.com/tpierrain/NFluent). For more information about CodeRush Code Templates refer to official [CodeRush Documentation](https://docs.devexpress.com/CodeRushForRoslyn/115904/coding-assistance/code-templates).
+
+Under Releases you can find XML files containing templates. These can be easily imported into CodeRush's [Template Configuration](https://docs.devexpress.com/CodeRushForRoslyn/115919/coding-assistance/code-templates/template-configuration).
+
+
+# How to Use
+
+For NFluent-style assertions, you typically start with template **kk** followed by Space which expands to:
+    
+    Check.That(<value>)
+
+You can then enter the *value* to check, hit Enter, and then use one of the various templates from below, for example, **isf**, which expands to:
+
+    Check.That(<value>)
+        .IsFalse()
+
+Enter the final semicolon, hit Enter again and done.
 
 
 ### General Templates
@@ -45,12 +61,12 @@ Template | Code
 isnoem   |   .IsNullOrEmpty()
 isnows   |   .IsNullOrWhiteSpace()
 iseic    |   .IsEqualIgnoringCase(*expected*)
-ssw      |   .StartsWith(*expected*)
-sew      |   .EndsWith(*expected*)
-sma      |   .Matches(*expected*)
-smaw     |   .MatchesWildcards(*expected*)
+stw      |   .StartsWith(*expected*)
+enw      |   .EndsWith(*expected*)
+mat      |   .Matches(*expected*)
+matwc    |   .MatchesWildcards(*expected*)
 ncon     |   .DoesNotContain(*expected*)
-nsma     |   .DoesNotMatch(*expected*)
+nmat     |   .DoesNotMatch(*expected*)
 
 
 
