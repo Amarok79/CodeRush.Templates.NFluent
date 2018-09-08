@@ -5,6 +5,7 @@ This project provides a set of C#-based Code Templates for [CodeRush](https://ww
 Under Releases you can find XML files containing templates. These can be easily imported into CodeRush's [Template Configuration](https://docs.devexpress.com/CodeRushForRoslyn/115919/coding-assistance/code-templates/template-configuration).
 
 
+
 # How to Use
 
 For NFluent-style assertions, you typically start with template **kk** followed by Space which expands to:
@@ -18,6 +19,9 @@ You can then enter the *value* to check, hit Enter, and then use one of the vari
 
 Enter the final semicolon, hit Enter again and done.
 
+
+
+# Templates
 
 ### General Templates
 
@@ -46,7 +50,7 @@ iniot    |   .IsNoInstanceOfType(*expected*)
 ioo      |   .IsOneOf(*expected*)
 
 
-### Additional Collection-specific Templates
+### Collection-specific Templates
 
 Template | Code
 ---------|-----------------------------------------------------
@@ -54,7 +58,7 @@ con      |   .Contains(*expected*)
 hs       |   .HasSize(*expected*)
 
 
-### Additional String-specific Templates
+### String-specific Templates
 
 Template | Code
 ---------|-----------------------------------------------------
@@ -68,8 +72,4 @@ matwc    |   .MatchesWildcards(*expected*)
 ncon     |   .DoesNotContain(*expected*)
 nmat     |   .DoesNotMatch(*expected*)
 
-
-
-
-\<Work in Progress>
 
