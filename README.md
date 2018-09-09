@@ -17,7 +17,7 @@ You can then enter the *value* to check, hit Enter, and then use one of the vari
     Check.That(<value>)
         .IsFalse()
 
-Enter the final semicolon, hit Enter again and done.
+Enter the final semicolon, hit Enter again and done. Start again with **kk** for the next assertion.
 
 
 
