@@ -55,6 +55,9 @@ ioo      |   .IsOneOf(*expected*)
 Template | Code
 ---------|-----------------------------------------------------
 con      |   .Contains(*expected*)
+cone     |   .ContainsExactly(*expected*)
+iomo     |   .IsOnlyMadeOf(*expected*)
+ieqt     |   .IsEquivalentTo(*expected*)
 hs       |   .HasSize(*expected*)
 
 
