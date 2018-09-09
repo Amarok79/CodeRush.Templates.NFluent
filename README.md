@@ -48,6 +48,8 @@ iiot     |   .IsInstanceOfType(*expected*)
 inio     |   .IsNotInstanceOf\<*Type*>()
 iniot    |   .IsNoInstanceOfType(*expected*)
 ioo      |   .IsOneOf(*expected*)
+hsf      |   .HasFieldsWithSameValues(*expected*)
+hnsf     |   .HasNotFieldsWithSameValues(*expected*)
 
 
 ### Collection-specific Templates
@@ -59,6 +61,9 @@ cone     |   .ContainsExactly(*expected*)
 iomo     |   .IsOnlyMadeOf(*expected*)
 ieqt     |   .IsEquivalentTo(*expected*)
 hs       |   .HasSize(*expected*)
+hfe      |   .HasFirstElement().Which
+hle      |   .HasLastElement().Which
+hea      |   .HasElementAt(*index*).Which
 
 
 ### String-specific Templates
@@ -76,3 +81,13 @@ ncon     |   .DoesNotContain(*expected*)
 nmat     |   .DoesNotMatch(*expected*)
 
 
+### Codeblock Templates
+
+Template | Code
+---------|-----------------------------------------------------
+kkc      |   Check.ThatCode(() => *code-block*)
+kkcc     |   Check.ThatCode(() => { *code-block* })
+kkac     |   Check.ThatAsyncCode(async () => *code-block*)
+kkacc    |   Check.ThatAsyncCode(async () => { *code-block* })
+kkct     |   Check.ThatCode(() => *code-block*).Throws<*Exception*>();
+kkact    |   Check.ThatAsyncCode(async () => *code-block*).Throws<*Exception*>();
