@@ -2,7 +2,7 @@
 
 This project provides a set of C#-based Code Templates for [CodeRush](https://www.devexpress.com/products/coderush/) targeted explicitly at writing unit tests with [NFluent](https://github.com/tpierrain/NFluent). For more information about CodeRush Code Templates refer to the official [CodeRush Documentation](https://docs.devexpress.com/CodeRushForRoslyn/115904/coding-assistance/code-templates).
 
-Under Releases you can find XML files containing templates. These can be easily imported into CodeRush's [Template Configuration](https://docs.devexpress.com/CodeRushForRoslyn/115919/coding-assistance/code-templates/template-configuration).
+Under Releases you can find XML files containing templates. These can be easily imported in CodeRush's [Template Configuration](https://docs.devexpress.com/CodeRushForRoslyn/115919/coding-assistance/code-templates/template-configuration).
 
 
 
